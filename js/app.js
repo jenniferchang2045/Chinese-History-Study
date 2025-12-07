@@ -8,7 +8,9 @@ function init(){
  renderer.setSize(window.innerWidth-450, window.innerHeight);
  document.getElementById("globe-container").appendChild(renderer.domElement);
  controls=new THREE.OrbitControls(camera,renderer.domElement);
- const tex=new THREE.TextureLoader().load("https://raw.githubusercontent.com/johan/world.geo.json/master/images/earth.jpg");
+ const earthTexture = new THREE.TextureLoader().load(
+  "https://cdn.jsdelivr.net/gh/ajd-123/earth-textures@main/earthmap4k.jpg"
+);
  earth=new THREE.Mesh(new THREE.SphereGeometry(120,64,64), new THREE.MeshBasicMaterial({map:tex}));
  scene.add(earth);
 }
