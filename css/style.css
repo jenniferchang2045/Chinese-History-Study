@@ -1,0 +1,5 @@
+body{margin:0;display:flex;font-family:Arial;}
+#sidebar{width:200px;padding:10px;background:#eee;}
+#globe-container{flex:1;height:100vh;background:black;}
+#tutor{width:250px;padding:10px;background:#f9f9f9;}
+button{width:100%;margin:5px 0;padding:8px;}
