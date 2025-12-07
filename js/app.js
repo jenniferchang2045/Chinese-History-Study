@@ -1,6 +1,7 @@
 let scene,camera,renderer,controls,earth;
 init(); animate();
 function init(){
+ const tex = earthTextures;
  scene=new THREE.Scene();
  camera=new THREE.PerspectiveCamera(45, window.innerWidth/window.innerHeight,0.1,2000);
  camera.position.set(0,0,400);
